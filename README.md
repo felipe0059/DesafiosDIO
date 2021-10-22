@@ -1,5 +1,5 @@
 # DesafiosDIO
-Resolvendo desafios médios da plataforma
+Resolvendo desafios médios e intermediários da plataforma
 
 Médios : 
 1) - [x] [Pote de Mel](https://github.com/felipe0059/DesafiosDIO/blob/main/Desafio%20%231)
