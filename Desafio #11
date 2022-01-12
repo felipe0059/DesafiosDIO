@@ -1,0 +1,38 @@
+A fórmula de Binet é uma forma de calcular números de Fibonacci.
+
+Sua tarefa é, dado um natural n, calcular o valor de Fibonacci(n) usando a fórmula acima.
+
+Entrada
+A entrada é um número natural n (0 < n ≤ 50).
+
+Saída
+A saída é o valor de Fibonacci(n) com 1 casa decimal utilizando a fórmula de Binet dada.
+
+ ======================================================================================================================================================
+
+SOLUÇÃO
+
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		Double fibonacci;
+		if (n>=0 && n<=50){
+			double raiz5 = Math.sqrt(5);
+			double conta1 = (1 + raiz5) / 2;
+			double eleva1 = Math.pow(conta1,n);
+			double conta2 = (1 - raiz5) / 2;
+			double eleva2 = Math.pow(conta2,n);
+			fibonacci = (eleva1-eleva2)/raiz5;
+			
+			System.out.printf("%.1f\n",fibonacci);
+		}
+		sc.close();
+	}
+}
